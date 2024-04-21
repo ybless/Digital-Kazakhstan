@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ 
+
+ @import "https://fonts.fontstorage.com/import/introcondensed.css";
+ @import "https://fonts.fontstorage.com/import/airborne.css";
+ @import "https://fonts.fontstorage.com/import/webserveroff.css";
+
+
+
+
+p{
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ body{
+    background: rgb(26,26,26);
+background: linear-gradient(90deg, rgba(26,26,26,1) 0%, rgba(0,0,0,1) 9%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 91%, rgba(26,26,26,1) 100%);
+margin-bottom: 150px;
+
+}
+ 
+ 
+ 
+ 
+ 
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .nav-links{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background: black;
+        padding: 20px 15px;
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        z-index: 999;
+      }
+      
+      .nav-links li{
+        list-style: none;
+        margin: 0 24px;
+      }
+      
+      .nav-links li a{
+        position: relative;
+        color:  #9a9a9a;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 6px 0;
+        text-decoration: none;
+      }
+      
+      .nav-links li a:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 0%;
+          background-color: #110056;
+        border-radius: 12px;
+        transition: all 0.4s ease;
+      }
+      
+      .nav-links li a:hover:before{
+        width: 100%;
+      }
+      
+      .nav-links li.center a:before{
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      .nav-links li.upward a:before{
+        width: 100%;
+        bottom: -5px;
+        opacity: 0;
+      }
+      
+      .nav-links li.upward a:hover:before{
+        bottom: 0px;
+        opacity: 1;
+      }
+      
+      .nav-links li.forward a:before{
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease;
+      }
+      
+      .nav-links li.forward a:hover:before{
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+
+      h1{
+        margin-top: 130px;
+        color: #b8b8b8;
+        margin-left: 50px;
+        font-family: 'Airborne';
+        font-size: 45px;
+      }
+    
+
+
+
+      img {
+            height: 384px;
+            width: 384px;
+            margin-left: 250px;
+            margin-top: 100px;
+        }
+
+        
+
+      h3{
+        margin-top: 130px;
+        color: #b8b8b8;
+        margin-left: 50px;
+        font-family: 'Airborne';
+        font-size: 45px;
+      }
+
+      
+hr{
+    margin-top: 30px;
+}
+  
+
+
+h4{
+    color: aliceblue;
+    font-size: 22px;
+    font-family: 'Web Serveroff';
+    line-height: 1.6;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+   
+   .button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-left: 600px;
+  margin-top: 100px;
+}
+
+.button:active,
+.button:hover {
+  outline: 0;
+}
+
+.button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+
+</style>
+
+</head>
+
+
+
+
+
+    <body>
+        <ul class="nav-links">
+            <li><a href="main.html">Главная</a></li>
+            <li class="center"><a href="programm.html">Программа "Цифровой Казахстан"</a></li>
+            <li class="upward"><a href="digitalinfrastructurу.html">Цифровая инфраструктура</a></li>
+            <li class="forward"><a href="publicparticipation.html">Общественное участие</a></li>
+        </ul>
+
+    <h1>"Цифровой Казахстан: На Пути к Технологическому Лидерству"</h1>
+
+
+    
+
+
+    <div style="display: flex;">
+        <img src="planet.jpg" alt="web planet photo" style="box-shadow: 0 10px 10px; height: 384px; width: 384px; margin-left: 250px; margin-top: 100px;">
+        <h2 style="color: aliceblue; margin-top: 150px; margin-left: 20px; line-height: 1.6; font-size: 22px; font-family: 'Web Serveroff';">В последние десятилетия Казахстан не только претерпел значительные изменения в своей экономике и социальной структуре, но и стал свидетелем революции в области цифровых технологий. Стремительное развитие информационных и коммуникационных технологий (ИКТ) привело к возникновению концепции "Цифрового Казахстана" - стратегического плана по модернизации экономики и улучшению качества жизни граждан через инновационные цифровые решения.</h2>
+    </div>
+   
+
+<hr>
+<h3>Инновации, Интеграция, Инфраструктура: Тройной Импульс Цифровой Трансформации.</h3>
+
+<h4>Одним из ключевых аспектов цифровой трансформации в Казахстане<br>
+     является развитие инновационной инфраструктуры, способной обеспечить поддержку для стартапов<br>
+      и технологических предприятий. Государственные инвестиции и стратегические партнерства с ведущими мировыми<br> 
+      технологическими компаниями создают благоприятные условия для развития цифровой экосистемы.<br>
+</h4>
+
+
+<img src="planet.jpg" alt="web planet photo" style="box-shadow: 0 10px 10px; height: 384px; width: 384px; margin-left: 350px; margin-top: 100px;">
+<hr>
+
+<h3> Образование и Цифровая Грамотность: Открытые Двери в Мир Знаний</h3>
+<h4>Цифровой Казахстан придает большое значение образованию и цифровой грамотности. Программы по повышению уровня цифровых
+     навыков и обучению программированию включаются в школьные и университетские учебные планы. Это позволяет создать кадровый резерв, 
+        способный эффективно использовать цифровые технологии в различных областях.</h4>
+        <img src="planet.jpg" alt="web planet photo" style="box-shadow: 0 10px 10px; height: 384px; width: 384px; margin-left: 450px; margin-top: 100px;">
+<hr>
+
+<h3>Электронное Правительство: Умное Управление для Цифрового Будущего</h3>
+<h4>Внедрение электронного правительства стало ключевым элементом стратегии Цифрового Казахстана. Онлайн-сервисы для получения государственных услуг, цифровые платформы для обмена информацией между государственными органами и гражданами, а также цифровые идентификаторы помогают сделать государственные службы более доступными и эффективными.
+</h4>
+<img src="planet.jpg" alt="web planet photo" style="box-shadow: 0 10px 10px; height: 384px; width: 384px; margin-left: 550px; margin-top: 100px;">
+<hr>
+
+
+
+<h3>Кибербезопасность: Защита в Цифровую Эпоху</h3>
+<h4>С развитием цифровых технологий возникают новые вызовы в области кибербезопасности. Цифровой Казахстан активно инвестирует в развитие инфраструктуры кибербезопасности и проводит обучающие мероприятия по противодействию киберугрозам. Это позволяет обеспечить защиту личных данных граждан, а также защиту критической информационной инфраструктуры страны.
+</h4>
+
+
+<img src="planet.jpg" alt="web planet photo" style="box-shadow: 0 10px 10px; height: 242px; width: 242px; margin-left: 1000px; margin-top: 100px;">
+
+<h3> Города Будущего: Смарт-Города для Жизни Завтрашнего Дня</h3>
+<h4>Казахстан стремится создать смарт-города, где цифровые технологии играют ключевую роль в управлении городской инфраструктурой, транспортом, образованием и здравоохранением. Интеграция "интернета вещей" и сенсорных сетей позволяет создать города, которые эффективно используют ресурсы и обеспечивают комфортную жизнь для своих жителей.
+</h4>
+<img src="planet.jpg" alt="web planet photo" style="box-shadow: 0 10px 10px; height: 242px; width: 242px; margin-left:200px; margin-top: 100px;">
+<hr>
+
+<h4>Цифровой Казахстан - это не только стратегия развития, но и мощный сигнал о готовности страны к глобальным вызовам и возможностям,
+     которые предлагает цифровая эпоха. С каждым шагом вперед, Казахстан утверждает свою роль технологического лидера в регионе и 
+     мировой арене.</h4>
+
+     <button class="button" role="button"><span class="text"><a href="main.html" style="text-decoration: none; color: inherit;">
+        Назад</a></span></button>
+
+
+
+    
+
+     
+        
+        <p>&copy;2024 Emamian Yasmine | github: ybless</p>
+      
+
+</body>
+</html>

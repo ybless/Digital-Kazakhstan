@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+@import "https://fonts.fontstorage.com/import/intro.css";
+           @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+           @import "https://fonts.fontstorage.com/import/roboto.css";
+           @import "https://fonts.fontstorage.com/import/qolyazma.css";
+           @import "https://fonts.fontstorage.com/import/introcondensed.css";
+ @import "https://fonts.fontstorage.com/import/airborne.css";
+ @import "https://fonts.fontstorage.com/import/webserveroff.css";
+
+
+
+ p{
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+           body {
+    position: relative;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 68%, rgba(54,54,54,1) 100%);
+   margin-bottom: 100px; 
+}
+
+
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+.nav-links{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: black;
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.nav-links li{
+  list-style: none;
+  margin: 0 24px;
+}
+
+.nav-links li a{
+  position: relative;
+  color:  #9a9a9a;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+}
+
+.nav-links li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+    background-color: #110056;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.nav-links li a:hover:before{
+  width: 100%;
+}
+
+.nav-links li.center a:before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links li.upward a:before{
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+
+.nav-links li.upward a:hover:before{
+  bottom: 0px;
+  opacity: 1;
+}
+
+.nav-links li.forward a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+
+.nav-links li.forward a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+h1 {
+    margin-top: 130px;
+        color: #b8b8b8;
+        margin-left: 50px;
+        font-family: 'Airborne';
+        font-size: 45px;
+        margin-top: 100px;
+}
+
+img{
+    height: 407px;
+    width: 423,5px;
+    border-radius: 300px;
+    margin-left: 900px;
+    box-shadow: 0 10px 20px rgba(78, 31, 75, 100);
+    
+}
+
+
+
+
+.content-container {
+    display: flex;
+}
+
+.text-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px; }
+
+h2 {
+    color: #b8b8b8;
+    font-family: 'Airborne';
+    font-size: 24px;
+    margin-right: 20px; 
+    margin-top: 200px;
+}
+
+img {
+    height: 407px;
+    width: 423.5px;
+    border-radius: 300px;
+    margin-left: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 200px;
+}
+
+h3{
+    color: #b8b8b8;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: monospace;
+}
+
+
+h4{
+        color: #b8b8b8;
+        margin-left: 50px;
+        font-family: 'Airborne';
+        font-size: 45px;
+        margin-top: 100px;  
+}
+
+
+
+
+
+
+.custom-img{
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+}
+
+h5{
+    color: #b8b8b8;
+        margin-left: 50px;
+        font-family: 'Airborne';
+        font-size: 20px;
+        margin-top: 100px; 
+        margin-bottom: 30px;   
+}
+
+
+
+h6{
+    color: #b8b8b8;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: monospace;
+    font-size: 20px;
+
+}
+
+
+
+
+
+    </style>
+</head>
+
+
+
+<body>
+    <ul class="nav-links">
+        <li><a href="main.html">Главная</a></li>
+        <li class="center"><a href="programm.html">Программа "Цифровой Казахстан"</a></li>
+        <li class="upward"><a href="digitalinfrastructurу.html">Цифровая инфраструктура</a></li>
+        <li class="forward"><a href="publicparticipation.html">Общественное участие</a></li>
+    </ul>
+
+       <h4>Программа "Цифровой Казахстан": Революция в Технологическом Пространстве</h4>
+    
+
+    
+    
+    <div class="content-container">
+        <h1>Digital Kazakhstan-</h1>
+        <div class="text-image-container">
+            <h2>это программа, призванная ускорить темпы развития казахстанской экономики и повысить качество жизни наших граждан.</h2>
+            <img src="WhatsApp Image 2024-04-20 at 18.17.15.jpeg" alt="Изображение Digital Kazakhstan">
+        </div>
+    </div>
+    <h1>Цель программы:</h1>
+
+    <ol>
+     <li>   <h3 style="margin-top: 20px;">Ускорение темпов развития экономики Республики Казахстан и улучшение качества жизни населения</h3></li> 
+        
+      <li> <h3 style="margin-top: 20px;">Создание условий для перехода экономики на принципиально новую траекторию – цифровую экономику будущего</h3></li> 
+    </ol>   
+
+
+    
+    <img src="photo1713659510-removebg-preview.png" class="custom-img">
+
+
+    <h5>Программа предусматривает ряд ключевых мероприятий, включая развитие цифровой инфраструктуры, содействие цифровой трансформации государственного управления,
+         развитие цифрового образования и повышение кибербезопасности.</h5>
+<hr>
+
+
+
+<h6>Одним из приоритетных направлений программы является развитие цифровых навыков и компетенций среди населения. Это включает в себя обучение и подготовку специалистов в области информационных технологий,
+     стимулирование предпринимательства в сфере цифровых инноваций и создание благоприятной среды для развития стартапов.</h6>
+
+     <h6>В рамках программы активно внедряются современные технологии в различные сферы жизни, такие как здравоохранение, образование, транспорт, государственное управление и др.
+         Это способствует повышению эффективности предоставления услуг, оптимизации бизнес-процессов и улучшению качества жизни граждан.</h6>
+
+       <h5>Цифровой Казахстан является ключевым элементом стратегического развития страны в условиях цифровой трансформации мировой экономики. С помощью этой программы Казахстан стремится не только укрепить свои позиции на мировой арене,
+         но и обеспечить устойчивое и процветающее будущее для своих граждан.</h5>
+
+         <footer class="footer">
+            <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+            
+            <p>&copy;2024 Emamian Yasmine | github: ybless</p>
+          
+
+
+
+</body>
+</html>
+
+
+
